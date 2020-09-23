@@ -55,8 +55,9 @@ angular.module("FindAway",[])
 
         //mostramos la seccion de info
         setTimeout(() => {
-            $("#sIzq").css("margin-left",".5vw");
-            $scope.$apply();
+            $scope.$apply(function(){
+                $("#sIzq").css("margin-left",".5vw");
+            });
         }, 100);
 
     }
@@ -67,12 +68,13 @@ angular.module("FindAway",[])
         //ocultamos info ruta
         $("#sIzq").css("margin-left","-50%");
         setTimeout(() => {
-            $scope.mostrar = false;
-            $("#sIzq").css("margin-left","-20%");//2da vez para que no tarde en regresar
-            $('#main-map').attr("src","https://www.google.com/maps/d/embed?mid=1Eii0TX7oziPNwNbeJQZw0ZcgKkPlpwd-");
-            $("#mapa").css("width","100%");
-            $("#sCen").css("margin-left","auto");
-            $scope.$apply();
+            $scope.$apply(function(){
+                $scope.mostrar = false;
+                $("#sIzq").css("margin-left","-20%");//2da vez para que no tarde en regresar
+                $('#main-map').attr("src","https://www.google.com/maps/d/embed?mid=1Eii0TX7oziPNwNbeJQZw0ZcgKkPlpwd-");
+                $("#mapa").css("width","100%");
+                $("#sCen").css("margin-left","auto");
+            });
         }, 150);
     }
     //Redes sociales
