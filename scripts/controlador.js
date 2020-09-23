@@ -56,8 +56,8 @@ angular.module("FindAway",[])
         //mostramos la seccion de info
         setTimeout(() => {
             $("#sIzq").css("margin-left",".5vw");
+            $scope.$apply();
         }, 100);
-        $scope.$digest();
 
     }
 }])
@@ -72,8 +72,8 @@ angular.module("FindAway",[])
             $('#main-map').attr("src","https://www.google.com/maps/d/embed?mid=1Eii0TX7oziPNwNbeJQZw0ZcgKkPlpwd-");
             $("#mapa").css("width","100%");
             $("#sCen").css("margin-left","auto");
+            $scope.$apply();
         }, 150);
-        $scope.$digest();
     }
     //Redes sociales
     $scope.redes =[
