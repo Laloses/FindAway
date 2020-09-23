@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Satisfy&display=swap');
+h1,h2,h3,h4,h5,h6{ 
+    font-family: 'Satisfy';
+    font-weight: normal;
+}
+a,p,span{
+    font-family: "Roboto";
+    color: black;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-bottom:  2.5vw; /* the bottom margin is the value of the footer's height */
+}
+.body,html{
+    height: 100%;
+    color: black;
+    font-family: 'Roboto';
+    text-align: center;
+    background-image: url(img/fondo2.jpg);
+}
+.bordes{
+    border: #ff6644  1px ridge;
+    padding: .1vw .1vw .1vw .1vw;
+    border-top-left-radius: .5vw;
+    border-bottom-right-radius: .5vw;
+}
+.bordes2{
+    border: #1e96e0  1px ridge;
+    border-radius: .5vw;
+}
+.header{
+    color: black;
+    font-family: "Satisfy";
+    background-color: #1afd;
+    width: 100%;
+    padding-top: 5px;
+}
+.header-col{
+    display: inline-block;
+    vertical-align: middle;
+    margin:auto;
+    width: 33%;
+}
+.login{ 
+    font-family: 'Roboto';
+    border-radius: 1vw;
+    background: #FFA840;
+}
+.login:hover{
+    background-color: #44adeb;
+    padding-top: 3px;
+}
+.imgP{
+    width: 7vw;
+    height: auto;
+}
+.logo{
+    width: 20vw;
+    height: auto;
+}
+.izq{
+    position: relative;
+    width: 9%;
+    height: auto;
+    margin: .5vw 0vw 0vw 0vw;
+}
+.boton{
+    margin: auto;
+    display: inline-block;
+    background: #FFA840;
+}
+.titleBtn{
+    margin-left: 4vw;
+}
+.imgBtn{
+    height: 5vw;
+}
+.search{
+    width: 80%;
+    margin: .5vw 0vw .5vw 0vw;
+    background-color: #bbfffc;
+}
+.search:focus{
+    background-color: #fff;
+}
+.redes{
+    display: inline-block;
+    background-color: #FFA840;
+    width: auto;
+    height: auto;
+    margin: 1vw auto 1vw 7vw;
+    padding: .5vw 0vw .5vw 0vw;
+}
+.redes-logo{
+    margin: .5vw 2vw auto 2vw;
+    width: 3vw;
+    height: 3vw;
+    max-height: 10vw;
+    max-width: 10vw;
+}
+.cen{
+    transition: all 0.5s;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 74%;
+    height: auto;
+}
+.cenLogin{
+    position: relative;
+    display: inline-block;
+    width: 99%;
+    height: 100%;
+    vertical-align: middle;
+}
+.mapa{
+    transition: all 0.5s;
+    position: relative;
+    margin: 1vw auto 0px auto;
+    width: 100%;
+    height: 36vw;
+}
+#main-map{
+    *position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    border-radius: .5vw;
+    height: 100%;
+}
+.tools{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5%;
+}
+.comentarios{
+    width: 90%;
+    background-color: #61b9ec;
+    margin: auto;
+    margin-bottom: 1vw;
+}
+.comment{
+    margin: 1vw;
+    background-color: white;
+    width: 98%;
+    border: #FFA840 solid 2px;
+}
+.datosComment{
+    display: block;
+    margin: auto;
+    text-align: left;
+    padding-left: .5vw;
+    margin-top: 5px;
+    border: black solid 1px;
+    width:98%
+}
+.mensajeComment{
+    margin: auto;
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    width: 95%;
+    text-align: left;
+    padding-left: .5vw;
+    border: black solid 1px;
+}
+.tituloCal{
+    background-color: #FFA840;
+    padding: 1vw;
+    margin-left: .5vw;
+    width: 99%;
+    height: 100%;
+    vertical-align: middle;
+}
+.infoRuta{
+    background-color: #FFA840;
+    padding: 1vw;
+    margin-left: .5vw;
+    width: 150%;
+    height: auto;
+}
+.imgCamion{
+    padding: .5vw;
+    width: 100%;
+    height: auto;
+    border-radius: 200%;
+}
+.ruta{
+    background-color: white;
+    display: block;
+    margin: auto;
+    width:100%;
+    margin-top: .1vw;
+    border-radius: 1vw;
+}
+.infoC{
+    display: block;
+    text-align: center;
+}
+.descripcionC{
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: medium;
+}
+.comentariosC{
+    width: 79%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.comment-col{
+    width: 49%;
+    text-align: left;
+}
+.nombreRuta{
+    display: block;
+    text-transform: capitalize;
+    margin: auto;
+    width: 100%;;
+}
+.der{
+    position: relative;
+    display:inline-block;
+    right: 1vw;
+    background-color: #FFA840;
+    width: 15.5vw;
+    height: auto;
+    margin: .5vw 0vw .5vw 0vw;
+    padding: .5vw 0vw .5vw 0vw;
+    
+    opacity: 0;
+}
+.fil-header{
+    margin: .5vw auto;
+    border-radius: 1vw;
+    background-color: white;
+}
+.fil-header a{
+    cursor: pointer;
+}
+.fil-content{
+    display: flex;
+    text-align: left;
+    margin: auto;
+    border-radius: 1vw;
+}
+.fil-header:hover{
+    background-color: #44adeb;
+    width: 98%;
+    padding-bottom: 3px;
+}
+.fil-content:hover{
+    text-decoration: none;
+    background-color: #44adeb;
+    padding-bottom: 3px;
+    width: 98%;
+}
+.fil-col{
+    display: inline-block;
+    vertical-align: middle;
+    margin:auto;
+    padding: .5vw;
+    width: 50% !important;
+}
+.imgBu{
+    width: 4vw;
+}
+.imgE{
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 2.5vw;
+    padding: .5vw;
+    width: 100%;
+    background-color: #1afd;
+}
+.footer-col{
+    display: inline-block;
+    vertical-align: middle;
+    margin:auto;
+    width: 33% !important;
+}
+#qYa:hover{
+    text-decoration: underline white;
+}
+/*Seccion pagina calificar */
+.containRuta{
+    background-color: white;
+    margin: auto;
+    width:100%;
+    margin-top: .1vw;
+    border-radius: 1vw;
+}
+.calRuta{
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    width:15%;
+    margin-top: .1vw;
+}
+/*efecto*/
+
+            [type=radio] {  /*quitar los radio bottoms */
+                position:absolute;
+                width: 0;
+                height: 0;
+            }
+            .rating > label{
+              background-color: white; /* Start color when not clicked */
+            }
+            [type=radio]:hover + img{ /* Set color when star hover */
+                background-color: #363B7C;
+            } 
+            [type=radio]:checked  + img{ /* Set color when star checked */
+                background-color: #363B7C;
+            }
+            .rating label:hover ~ label{ /* Set color when star checked */
+                background-color: #363B7C ;
+            }
+            .rating label[backbackground-color=#363B7C] ~ label{
+                background-color: #363B7C
+            }
+
+/* Angular */
+.rutaSelected{
+    border: 2px solid #44adeb;
+}
+.after-cloak{
+    opacity: 1;
+    -moz-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+    -webkit-transition: opacity 2s ease;
+    transition: opacity 2s ease;
+}
+.after-cloak3{
+    opacity: 1;
+    -moz-transition: opacity 3s ease;
+    -o-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+}
