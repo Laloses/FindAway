@@ -60,10 +60,13 @@ a,p,span{
     height: auto;
 }
 .izq{
+    transition: all 0.5s;
     position: relative;
+    max-width: 9%;
     width: 9%;
     height: auto;
     margin: .5vw 0vw 0vw 0vw;
+    margin-left: -20%;
 }
 .boton{
     margin: auto;
