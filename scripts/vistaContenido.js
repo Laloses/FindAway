@@ -1,6 +1,7 @@
 function mostrarInfo(){
     var ob = document.getElementById("infoRuta");
     ob.style.display="block";
+<<<<<<< HEAD
     try {
         ob = document.getElementById("comentarios");
         ob.style.display="block";
@@ -18,12 +19,19 @@ function quitarInfo(){
 function vaciarInfo(){
      //Get the section  element with id="ruta"
     var list = document.getElementById("infoRuta");
+=======
+}
+function vaciarInfo(){
+     //Get the section  element with id="ruta"
+    var list = document.getElementById("ruta");
+>>>>>>> 01fc15f7be5713c6cd4ceb1e91b51916cb1d72cc
     // As long as <section id="ruta" class="ruta"> has a child node, remove it
     if(list.hasChildNodes()){
         while( list.hasChildNodes() ) {
             list.removeChild(list.lastChild);
         }
     }
+<<<<<<< HEAD
     try {
         list = document.getElementById("comentarios");
         if(list.hasChildNodes()){
@@ -71,15 +79,33 @@ function llenarInfo(nomRuta,descRuta,id_ruta,mapRuta,callback){
 
     //Guardamos el valor de la ruta seleccionada
     document.getElementById('idRuta').value=id_ruta;
+=======
+}
+function quitarInfo(){
+    var ob = document.getElementById("infoRuta");
+    ob.style.display="none";
+    vaciarInfo();
+}
+function llenarInfo(nomRuta,descRuta,mapRuta,callback){
+    callback(mapRuta);
+    var contenido = "<section class='ruta'><section class='infoC'><img src='img/camiones/"+nomRuta+".jpg' class='imgCamion'><span class='nombreRuta'><br>"+nomRuta+"</span></section><section class='descripcionC'><p>"+descRuta+"</p></section></section>"
+    document.getElementById('ruta').insertAdjacentHTML('beforeend', contenido);
+>>>>>>> 01fc15f7be5713c6cd4ceb1e91b51916cb1d72cc
     mostrarInfo();
 }
 //Funcion para cargar cada mapa
 function loadMap(mapRuta){
     document.getElementById('main-map').src = mapRuta;
+<<<<<<< HEAD
+=======
+//    var ruta10="https://www.google.com/maps/d/embed?mid=1_hCLxFvRH0-V_tvteuGLWY9xNlk&hl=es-419";
+//    document.getElementById('main-map').src = ruta10;
+>>>>>>> 01fc15f7be5713c6cd4ceb1e91b51916cb1d72cc
     vaciarInfo();
 }
 //Funcion para limpiar el mapa
 function clearMap(){
+<<<<<<< HEAD
     document.getElementById('main-map').src = "https://www.google.com/maps/d/embed?mid=1Eii0TX7oziPNwNbeJQZw0ZcgKkPlpwd-";
     document.getElementById('mapa').style.width = '100%';
     document.getElementById('sCen').style.marginLeft = 'auto';
@@ -147,3 +173,42 @@ function getXMLHttpRequest()
 	}
 	return objetoAjax;
 }
+=======
+    document.getElementById('main-map').src = "https://www.google.com/maps/d/embed?mid=1sAdyj55AKuJ4RV2gjA0Q4rBM8q-VsDi5";
+    quitarInfo();
+}
+
+function calificar(){
+    var pagina="calificar.php";
+    if( window.confirm('¿Esta siendo redirigido para guardar su partida, desea ir?') ){
+        window.open(pagina,"","width=500, height=500, fullscren=yes");
+    }
+}
+//Funcion para agregar la página de preguntas y respuestas
+function loadDoc(opc){
+         var xhttp = getObjXMLHttpRequest();
+         xhttp.open('GET','q&a.php',true);
+         xhttp.onreadystatechange = function(){
+         if (this.readyState == 4 && this.status == 200){
+             switch(opc){
+                //Case de la página q&a
+                 case 1: document.getElementById("body").innerHTML = xhttp.responseText;
+                break;
+             }
+         }
+         };
+         xhttp.send();
+     }
+//Funcion para detectar navegadores del innerHTML
+function getObjXMLHttpRequest(){
+    var http;
+    if(window.ActiveXObject){
+        http= new ActiveXObject("Msxml2.XMLHttp");
+     return http;         
+    }
+    else{
+        http = new XMLHttpRequest();
+        return http;
+    }
+}
+>>>>>>> 01fc15f7be5713c6cd4ceb1e91b51916cb1d72cc

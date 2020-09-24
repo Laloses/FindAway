@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Roboto|Satisfy&display=swap');
 h1,h2,h3,h4,h5,h6{ 
     font-family: 'Satisfy';
@@ -314,4 +315,254 @@ a,p,span{
             }
             .rating label[backbackground-color=#363B7C] ~ label{
                 background-color: #363B7C
+=======
+@import url('https://fonts.googleapis.com/css?family=Roboto|Satisfy&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Satisfy';
+    font-weight: normal;
+}
+a,p,span{
+    font-family: "Roboto";
+    color: black;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-bottom:  2.5vw; /* the bottom margin is the value of the footer's height */
+}
+.body,html{
+    height: 100%;
+    color: black;
+    font-family: 'Roboto';
+    text-align: center;
+    background-image: url(img/fondo2.jpg);
+}
+.bordes{
+    border: #ff6644  1px ridge;
+    padding: .1vw .1vw .1vw .1vw;
+    border-top-left-radius: .5vw;
+    border-bottom-right-radius: .5vw;
+}
+.bordes2{
+    border: #1e96e0  1px ridge;
+    border-radius: .5vw;
+}
+.header{
+    color: black;
+    font-family: "Satisfy";
+    background-color: #1afd;
+    width: 100%;
+}
+.header-col{
+    display: inline-block;
+    vertical-align: middle;
+    margin:auto;
+    width: 33%;
+}
+.imgP{
+    width: 8vw;
+    height: auto;
+}
+.logo{
+    width: 24vw;
+    height: auto;
+}
+.izq{
+    position: relative;
+    width: 9%;
+    height: auto;
+    margin: .5vw 0vw 0vw 0vw;
+    //background-color: #e5e5e5;
+}
+.boton{
+    margin: 5.5% auto;
+    display: block;
+    background: #FFA840;
+}
+.botones{
+}
+.imgBtn{
+    width: 6vw;
+    height: 6vw;
+}
+.search{
+    width: 80%;
+    margin: .5vw 0vw .5vw 0vw;
+    background-color: #bbfffc;
+}
+.search:focus{
+    background-color: #fff;
+}
+.redes{
+    background-color: #FFA840;
+    width: 55%;
+    height: auto;
+    margin: 1vw auto 1vw auto;
+    padding: .5vw 0vw .5vw 0vw;
+}
+.redes-logo{
+    margin: .5vw auto;
+    width: 3vw;
+    height: 3vw;
+    max-height: 10vw;
+    max-width: 10vw;
+}
+.cen{
+    position: relative;
+    display: inline-block;
+    right: 8%;
+    margin: 0% .5% 0% 9%;
+    width: 74%;
+    height: auto;
+}
+.mapa{
+    position: relative;
+    margin-top: 5px auto 0px auto;
+    width: 99.5%;
+    height: 35vw;
+}
+#main-map{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 99%;
+    height: 100%;
+}
+.infoRuta{
+    background-color: #FFA840;
+    padding: 1vw;
+    clear: both;
+    margin: 1vw auto;
+    width: 98%;
+    height: auto;
+}
+.imgCamion{
+    width: 10vw;
+    height: auto;
+}
+.ruta{
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    width:100%;
+    margin-top: .1vw;
+    border-radius: 1vw;
+}
+.ruta:hover{
+    background-color: #44adeb;
+}
+.infoC{
+    padding: .5vw;
+    width: 19%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.descripcionC{
+    width: 79%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.nombreRuta{
+    display: inline-block;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+.der{
+    position: relative;
+    display:inline-block;
+    right: 1vw;
+    background-color: #FFA840;
+    width: 15.5vw;
+    height: auto;
+    margin: .5vw 0vw .5vw 0vw;
+    padding: .5vw 0vw .5vw 0vw;
+}
+.fil-header{
+    width: 97%;
+    margin: .5vw auto;
+    border-radius: 1vw;
+    background-color: white;
+}
+.fil-content{
+    display: block;
+    text-align: left;
+    width: 95%;
+    margin: auto;
+    border-radius: 1vw;
+}
+.fil-header:hover{
+    background-color: #44adeb;
+    width: 94%;
+}
+.fil-content:hover{
+    text-decoration: none;
+    background-color: #44adeb;
+    width: 97%;
+}
+.fil-col{
+    display: inline-block;
+    vertical-align: middle;
+    margin:auto;
+    padding: .5vw;
+    width: 50% !important;
+}
+.imgBu{
+    width: 4vw;
+}
+.imgE{
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 2.5vw;
+    padding: .5vw;
+    width: 100%;
+    background-color: #1afd;
+}
+.footer-col{
+    display: inline-block;
+    vertical-align: middle;
+    margin:auto;
+    width: 33% !important;
+}
+#qYa:hover{
+    text-decoration: underline white;
+}
+/*Seccion pagina calificar */
+.containRuta{
+    background-color: white;
+    margin: auto;
+    width:100%;
+    margin-top: .1vw;
+    border-radius: 1vw;
+}
+.calRuta{
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    width:15%;
+    margin-top: .1vw;
+}
+/*efecto*/
+
+            [type=radio] {  /*quitar los radio bottoms */
+                position:absolute;
+                width: 0;
+                height: 0;
+            }
+            .rating > label{
+              background-color: white; /* Start color when not clicked */
+            }
+            [type=radio]:hover + img{ /* Set color when star hover */
+                background-color: #363B7C;
+            } 
+            [type=radio]:checked  + img{ /* Set color when star checked */
+                background-color: #363B7C;
+            }
+            .rating label:hover ~ label{ /* Set color when star checked */
+                background-color: #363B7C ;
+            }
+            .rating label[backbackground-color=#363B7C] ~ label{
+                background-color: #363B7C
+>>>>>>> 01fc15f7be5713c6cd4ceb1e91b51916cb1d72cc
             }
